@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".SignupActivity">
+
+    <item
+        android:id="@+id/skip_btn" android:contentDescription="@string/skip_description" app:showAsAction="always" android:title="@string/action_skip" />
+</menu>

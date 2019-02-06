@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#ffb93b</color>
+    <color name="primaryLightColor">#ffeb6d</color>
+    <color name="secondaryColor">#ff616e</color>
+    <color name="secondaryLightColor">#ff949c</color>
+    <color name="secondaryDarkColor">#c62a43</color>
+    <color name="primaryTextColor">#161623</color>
+    <color name="secondaryBackgroundColor">#FBF9F9</color>
+    <color name="colorSoftBackground">#f9f2f9</color>
+    <color name="secondaryTextColor">#8B8B8B</color>
+    <color name="thirdTextColor">#6B6B6B</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="colorGoogle">#ea4335</color>
+    <color name="colorFacebook">#3b5998</color>
+</resources>

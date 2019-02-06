@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/secondaryBackgroundColor"
+    tools:context=".SignupActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/transparent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/toolBarText"
+            android:layout_width="69dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/fira_sans_semibold"
+            android:gravity="center_vertical"
+            android:letterSpacing="0.2"
+            android:text="ISLE"
+            android:textAlignment="gravity"
+            android:textColor="@color/primaryColor"
+            android:textSize="16sp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:padding="26dp"
+        android:backgroundTint="@color/primaryColor"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginTop="40dp"
+                android:contentDescription="mitsos_land"
+                android:layout_gravity="center"
+                android:src="@drawable/papa_artwork"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/email_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edges"
+                android:layout_marginLeft="@dimen/edges"
+                android:layout_marginRight="@dimen/edges"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/password_field"
+                android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edges"
+                android:layout_marginRight="@dimen/edges"
+                android:hint="@string/prompt_password"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/email_button_complete"
+                android:layout_marginTop="@dimen/vertical_edges"
+                android:padding="20dp"
+                android:layout_marginLeft="@dimen/edges"
+                android:layout_marginRight="@dimen/edges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start_exploring"
+                android:textStyle="bold"
+                android:outlineProvider="bounds"
+                android:textColor="@color/primaryColor"
+                android:backgroundTint="@color/secondaryBackgroundColor"
+                android:onClick="completeEmailSignUp"/>
+            <TextView
+                android:id="@+id/forgot_pass_text"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/vertical_edges"
+                android:textColor="@color/thirdTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot your password?"
+                />
+
+            <Button
+                android:id="@+id/reset_password_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="@color/transparent"
+                android:text="@string/reset_password"
+                android:textColor="@color/primaryColor"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:onClick="startResetActivity"/>
+
+
+            <Button
+                android:id="@+id/facebook_sign_up_button"
+                android:padding="20dp"
+                android:layout_marginTop="@dimen/edges"
+                android:layout_marginLeft="@dimen/edges"
+                android:layout_marginRight="@dimen/edges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_sign_up_facebook"
+                android:textStyle="bold"
+                android:textColor="@color/secondaryBackgroundColor"
+                android:backgroundTint="@color/colorFacebook"
+                android:onClick="startFacebookSignUp"/>
+
+            <Button
+                android:id="@+id/google_sign_up_button"
+                android:fontFamily="@font/fira_sans_semibold"
+                android:padding="20dp"
+                android:layout_marginLeft="@dimen/edges"
+                android:layout_marginRight="@dimen/edges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_sign_up_google"
+                android:textStyle="bold"
+                android:textColor="@color/secondaryBackgroundColor"
+                android:backgroundTint="@color/colorGoogle"
+                android:onClick="startGoogleSignUp"/>
+
+            <Button
+                android:id="@+id/email_button"
+                style="?android:textAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edges"
+                android:layout_marginRight="@dimen/edges"
+                android:backgroundTint="@color/secondaryBackgroundColor"
+                android:fontFamily="@font/fira_sans_semibold"
+                android:onClick="startEmailSignUp"
+                android:padding="20dp"
+                android:text="@string/action_sign_up"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "614003138442",
+    "firebase_url": "https://isleculture-app.firebaseio.com",
+    "project_id": "isleculture-app",
+    "storage_bucket": "isleculture-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614003138442:android:a4e367a6700bb7a5",
+        "android_client_info": {
+          "package_name": "com.isleculture.isleculture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614003138442-5f18kmjhpvkuu0mp1kme5anmtbk7mjgs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.isleculture.isleculture",
+            "certificate_hash": "e7b3c33b6ec3531a2b672d3b5aedc2002d8b00ae"
+          }
+        },
+        {
+          "client_id": "614003138442-alvnr189pkaea2k4is0u7ek2vp2v0bbi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD461eDE3u9Z6jfpPgd85nzAMp84nnxnzk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614003138442-alvnr189pkaea2k4is0u7ek2vp2v0bbi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

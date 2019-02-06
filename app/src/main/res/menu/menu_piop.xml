@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".SignupActivity">
+
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        app:showAsAction="never"/>
+    <item android:id="@+id/logout"
+        android:title="Log Out"
+        app:showAsAction="never"/>
+</menu>
